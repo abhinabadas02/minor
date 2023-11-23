@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch</title>
+    <link rel="stylesheet" href="/contactus.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="/2.png" alt="propertypricks.com">
+            </div>
+            <ul>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About Us</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="item"><a href="#">Agents</a></li>
+                <li class="item"><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <div id="pp"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="container1">
+        <div class="contain1">
+            <h1>Contact Us</h1>
+            <form action="#">
+                <!-- <label for="name">Name:</label> -->
+                <div class="one"><input type="text" name="name" placeholder=" Enter Your Name" required></div>
+
+                <!-- <label for="email">Email:</label> -->
+                <div class="one"><input type="email" name="email" placeholder=" Enter Your Email" required> </div>
+
+                <!-- <label for="number">Phone no.:</label> -->
+                <div class="one"><input type="text" placeholder=" Enter Your Phone Number" name="number" required>
+                </div>
+
+                <!-- <label for="message">Message:</label> -->
+                <div class="description"><textarea name="message" rows="10" cols="42" placeholder="Description"
+                        required></textarea></div>
+
+                <div class="submit"><button type="submit">SUBMIT</button></div>
+            </form>
+        </div>
+    </section>
+
+
+
+    <section class="container2">
+        <div class="contain2">
+            <form action="#">
+                <h1>Feedback</h1>
+                <div class="Star">
+                    <span onclick="rating(1)" class="star">★
+                    </span>
+                    <span onclick="rating(2)" class="star">★
+                    </span>
+                    <span onclick="rating(3)" class="star">★
+                    </span>
+                    <span onclick="rating(4)" class="star">★
+                    </span>
+                    <span onclick="rating(5)" class="star">★
+                    </span>
+                </div>
+                <h3 id="output">
+                    Rating is: 0/5
+                </h3>
+                <div class="experience"><textarea placeholder="Share your Experience"
+                        rows="5" cols="30"></textarea>
+                </div>
+                <div class="submit1"><button type="submit">Submit</button></div>
+            </form>
+        </div>
+    </section>
+
+    <section class="complaints">
+        <div class="complain">
+            <h1>Complaint</h1>
+            <textarea  cols="30" rows="10" placeholder="Write Your Complaints"></textarea>
+            <div class="submit2"><button type="submit">Submit</button></div>
+        </div>
+    </section>
+
+</body>
+<script src="contactus.js"></script>
+
+</html>
